@@ -224,7 +224,7 @@ const refreshServerStatus = async function(fade = false){
     let pVal = 'OFFLINE'
 
     try {
-        const serverURL = new URL('my://' + serv.getAddress())
+        const serverURL = new URL('my://' + "51.210.83.235:25575")
         const servStat = await ServerStatus.getStatus(serverURL.hostname, serverURL.port)
         if(servStat.online){
             pLabel = 'PLAYERS'
